@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const TaskSchema = new mongoose.Schema(
     {
-        userName: {
+        Task: {
             type: String,
             trim: true,
             maxLength: [60, 'Max Length upto 20 Characters'],
