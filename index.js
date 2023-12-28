@@ -10,8 +10,8 @@ dotenv.config()
 const app = express();
 
 // middleware
-app.use(express.json());
 app.use(cors())
+app.use(express.json());
 
 // use tasks router
 app.use('/api/v1/tasks', tasks);
