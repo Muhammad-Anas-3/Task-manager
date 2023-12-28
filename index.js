@@ -14,7 +14,7 @@ app.use(cors())
 app.use(express.json());
 
 // use tasks router
-app.use('/api/v1/tasks', tasks);
+app.use('https://task-manager-backend-kappa.vercel.app/', tasks);
 app.use(notFound)
 
 const connectAndListen = async () => {
